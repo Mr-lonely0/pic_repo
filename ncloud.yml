@@ -15,69 +15,70 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: '剩余流量：1536 GB', type: ss, server: 1.1.1.1, port: 53, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: 套餐到期：2024-04-10, type: ss, server: 1.1.1.1, port: 53, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: '跳转域名{请勿连接}:nflink.xyz', type: ss, server: 1.1.1.1, port: 53, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: '俄罗斯 A', type: ss, server: neoeur.upperlay.xyz, port: 630, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: '俄罗斯 B', type: ss, server: neoeur.upperlay.xyz, port: 631, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: '[直连] 香港', type: ss, server: hktactivc-e.onlineqitv-ns.xyz, port: 563, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: '香港动态 A', type: ss, server: shcuzxhk.eucdurl.me, port: 563, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: '香港动态 B', type: ss, server: shcuzxhk.eucdurl.me, port: 564, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: '香港动态 C', type: ss, server: shcuzxhk.eucdurl.me, port: 565, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: '日本 A', type: ss, server: aisalayer01.upperlay.xyz, port: 566, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: '日本 B', type: ss, server: aisalayer01.upperlay.xyz, port: 567, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: '新加坡 A', type: ss, server: aisalayer01.upperlay.xyz, port: 568, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: '新加坡 B', type: ss, server: aisalayer01.upperlay.xyz, port: 569, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: '新加坡 C', type: ss, server: aisalayer02.upperlay.xyz, port: 569, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: '新加坡 D', type: ss, server: aisalayer02.upperlay.xyz, port: 570, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: '新加坡 E', type: ss, server: aisalayer02.upperlay.xyz, port: 571, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: 韩国, type: ss, server: aisalayer01.upperlay.xyz, port: 570, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: 台湾, type: ss, server: cntwlayer1.labexit.xyz, port: 571, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: 'HKG A', type: ss, server: cmres.standpro.co, port: 564, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: 'HKG B', type: ss, server: 2cnrelay2.initcloud.pro, port: 563, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: 'HKG C', type: ss, server: shgez3.labexit.xyz, port: 569, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: 'HKG D', type: ss, server: cnhkall.debugex.xyz, port: 562, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: 'HKG E', type: ss, server: 2cnrelay2.initcloud.pro, port: 564, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: 'HKG F', type: ss, server: inlayer7.standurls.co, port: 563, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: 'HKG G', type: ss, server: inlayer7.standurls.co, port: 564, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: 'HKG H', type: ss, server: cmres.standpro.co, port: 565, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: 'HKG I', type: ss, server: inlayer7.standurls.co, port: 565, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: 'HKG J', type: ss, server: cmlayer6.standurls.co, port: 562, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: 'HKG K', type: ss, server: 3layer03.initcloud.pro, port: 562, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: 'HKG L', type: ss, server: 3layer03.initcloud.pro, port: 563, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: 'HKG M', type: ss, server: cnhkall.debugex.xyz, port: 563, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: 'HKG N', type: ss, server: initest08.initcloud.pro, port: 563, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: 'HKG O', type: ss, server: layercm05.initcloud.pro, port: 563, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: '美国 A', type: ss, server: usastand-a.upperlay.xyz, port: 565, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: '美国 B', type: ss, server: usastand-a.upperlay.xyz, port: 566, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: '美国 C', type: ss, server: usastand-a.upperlay.xyz, port: 567, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: '美国 D', type: ss, server: usastand-a.upperlay.xyz, port: 568, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: '美国 E', type: ss, server: usastand-a.upperlay.xyz, port: 569, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: '美国 F', type: ss, server: usastand-b.upperlay.xyz, port: 564, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: '美国 G', type: ss, server: usastand-b.upperlay.xyz, port: 565, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: '美国 H', type: ss, server: usastand-b.upperlay.xyz, port: 566, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: '美国 I', type: ss, server: usastand-b.upperlay.xyz, port: 567, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: '台湾 B', type: ss, server: cntwlayer1.labexit.xyz, port: 572, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: '台湾 C', type: ss, server: cntwlayer1.labexit.xyz, port: 573, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: '台湾 D', type: ss, server: cntwlayer1.labexit.xyz, port: 574, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: '台湾 E', type: ss, server: cntwlayer1.labexit.xyz, port: 575, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: '台湾 F', type: ss, server: cntwlayer1.labexit.xyz, port: 576, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: '台湾 H', type: ss, server: cntwlayer1.labexit.xyz, port: 578, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: 加拿大, type: ss, server: neoeur.upperlay.xyz, port: 570, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: '英国 A', type: ss, server: neoeur.upperlay.xyz, port: 634, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: '英国 B', type: ss, server: neoeur.upperlay.xyz, port: 635, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: 西班牙, type: ss, server: neoeur.upperlay.xyz, port: 638, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: 印度, type: ss, server: neoeur.upperlay.xyz, port: 633, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: 土耳其, type: ss, server: neoeur.upperlay.xyz, port: 636, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: 意大利, type: ss, server: neoeur.upperlay.xyz, port: 637, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: 荷兰, type: ss, server: neoeur.upperlay.xyz, port: 639, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
-    - { name: 德国, type: ss, server: neoeur.upperlay.xyz, port: 640, cipher: aes-128-gcm, password: d4b4cf32-b1d9-4956-9d8e-bec179de961c, udp: true }
+    - { name: '剩余流量：1481.72 GB', type: ss, server: 1.1.1.1, port: 53, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: '距离下次重置剩余：14 天', type: ss, server: 1.1.1.1, port: 53, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: 套餐到期：2024-04-10, type: ss, server: 1.1.1.1, port: 53, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: '跳转域名{请勿连接}:nflink.xyz', type: ss, server: 1.1.1.1, port: 53, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: '俄罗斯 A', type: ss, server: neoeur.upperlay.xyz, port: 630, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: '俄罗斯 B', type: ss, server: neoeur.upperlay.xyz, port: 631, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: '[直连] 香港', type: ss, server: hktactivc-e.onlineqitv-ns.xyz, port: 563, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: '香港动态 A', type: ss, server: shcuhk.nextnet.cyou, port: 563, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: '香港动态 B', type: ss, server: shcuhk.nextnet.cyou, port: 564, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: '香港动态 C', type: ss, server: shcuhk.nextnet.cyou, port: 565, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: '日本 A', type: ss, server: aisalayer01.upperlay.xyz, port: 566, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: '日本 B', type: ss, server: aisalayer01.upperlay.xyz, port: 567, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: '新加坡 A', type: ss, server: aisalayer01.upperlay.xyz, port: 568, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: '新加坡 B', type: ss, server: aisalayer01.upperlay.xyz, port: 569, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: '新加坡 C', type: ss, server: aisalayer02.upperlay.xyz, port: 569, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: '新加坡 D', type: ss, server: aisalayer02.upperlay.xyz, port: 570, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: '新加坡 E', type: ss, server: aisalayer02.upperlay.xyz, port: 571, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: 韩国, type: ss, server: aisalayer01.upperlay.xyz, port: 570, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: 台湾, type: ss, server: cntwlayer1.labexit.xyz, port: 571, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: 'HKG A', type: ss, server: cmres.standpro.co, port: 564, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: 'HKG B', type: ss, server: 2cnrelay2.initcloud.pro, port: 563, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: 'HKG C', type: ss, server: shgez3.labexit.xyz, port: 569, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: 'HKG D', type: ss, server: cnhkall.debugex.xyz, port: 562, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: 'HKG E', type: ss, server: 2cnrelay2.initcloud.pro, port: 564, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: 'HKG F', type: ss, server: inlayer7.standurls.co, port: 563, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: 'HKG G', type: ss, server: inlayer7.standurls.co, port: 564, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: 'HKG H', type: ss, server: cmres.standpro.co, port: 565, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: 'HKG I', type: ss, server: inlayer7.standurls.co, port: 565, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: 'HKG J', type: ss, server: cmlayer6.standurls.co, port: 562, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: 'HKG K', type: ss, server: 3layer03.initcloud.pro, port: 562, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: 'HKG L', type: ss, server: 3layer03.initcloud.pro, port: 563, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: 'HKG M', type: ss, server: cnhkall.debugex.xyz, port: 563, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: 'HKG N', type: ss, server: initest08.initcloud.pro, port: 563, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: 'HKG O', type: ss, server: layercm05.initcloud.pro, port: 563, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: '美国 A', type: ss, server: usastand-a.upperlay.xyz, port: 565, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: '美国 B', type: ss, server: usastand-a.upperlay.xyz, port: 566, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: '美国 C', type: ss, server: usastand-a.upperlay.xyz, port: 567, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: '美国 D', type: ss, server: usastand-a.upperlay.xyz, port: 568, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: '美国 E', type: ss, server: usastand-a.upperlay.xyz, port: 569, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: '美国 F', type: ss, server: usastand-b.upperlay.xyz, port: 564, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: '美国 G', type: ss, server: usastand-b.upperlay.xyz, port: 565, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: '美国 H', type: ss, server: usastand-b.upperlay.xyz, port: 566, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: '美国 I', type: ss, server: usastand-b.upperlay.xyz, port: 567, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: '台湾 B', type: ss, server: cntwlayer1.labexit.xyz, port: 572, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: '台湾 C', type: ss, server: cntwlayer1.labexit.xyz, port: 573, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: '台湾 D', type: ss, server: cntwlayer1.labexit.xyz, port: 574, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: '台湾 E', type: ss, server: cntwlayer1.labexit.xyz, port: 575, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: '台湾 F', type: ss, server: cntwlayer1.labexit.xyz, port: 576, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: '台湾 H', type: ss, server: cntwlayer1.labexit.xyz, port: 578, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: 加拿大, type: ss, server: neoeur.upperlay.xyz, port: 570, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: '英国 A', type: ss, server: neoeur.upperlay.xyz, port: 634, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: '英国 B', type: ss, server: neoeur.upperlay.xyz, port: 635, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: 西班牙, type: ss, server: neoeur.upperlay.xyz, port: 638, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: 印度, type: ss, server: neoeur.upperlay.xyz, port: 633, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: 土耳其, type: ss, server: neoeur.upperlay.xyz, port: 636, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: 意大利, type: ss, server: neoeur.upperlay.xyz, port: 637, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: 荷兰, type: ss, server: neoeur.upperlay.xyz, port: 639, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
+    - { name: 德国, type: ss, server: neoeur.upperlay.xyz, port: 640, cipher: aes-128-gcm, password: 7b714f02-5db5-4d6e-8fa3-91be85d25c8f, udp: true }
 proxy-groups:
-    - { name: NCloud, type: select, proxies: [自动选择, 故障转移, '剩余流量：1536 GB', 套餐到期：2024-04-10, '跳转域名{请勿连接}:nflink.xyz', '俄罗斯 A', '俄罗斯 B', '[直连] 香港', '香港动态 A', '香港动态 B', '香港动态 C', '日本 A', '日本 B', '新加坡 A', '新加坡 B', '新加坡 C', '新加坡 D', '新加坡 E', 韩国, 台湾, 'HKG A', 'HKG B', 'HKG C', 'HKG D', 'HKG E', 'HKG F', 'HKG G', 'HKG H', 'HKG I', 'HKG J', 'HKG K', 'HKG L', 'HKG M', 'HKG N', 'HKG O', '美国 A', '美国 B', '美国 C', '美国 D', '美国 E', '美国 F', '美国 G', '美国 H', '美国 I', '台湾 B', '台湾 C', '台湾 D', '台湾 E', '台湾 F', '台湾 H', 加拿大, '英国 A', '英国 B', 西班牙, 印度, 土耳其, 意大利, 荷兰, 德国] }
-    - { name: 自动选择, type: url-test, proxies: ['剩余流量：1536 GB', 套餐到期：2024-04-10, '跳转域名{请勿连接}:nflink.xyz', '俄罗斯 A', '俄罗斯 B', '[直连] 香港', '香港动态 A', '香港动态 B', '香港动态 C', '日本 A', '日本 B', '新加坡 A', '新加坡 B', '新加坡 C', '新加坡 D', '新加坡 E', 韩国, 台湾, 'HKG A', 'HKG B', 'HKG C', 'HKG D', 'HKG E', 'HKG F', 'HKG G', 'HKG H', 'HKG I', 'HKG J', 'HKG K', 'HKG L', 'HKG M', 'HKG N', 'HKG O', '美国 A', '美国 B', '美国 C', '美国 D', '美国 E', '美国 F', '美国 G', '美国 H', '美国 I', '台湾 B', '台湾 C', '台湾 D', '台湾 E', '台湾 F', '台湾 H', 加拿大, '英国 A', '英国 B', 西班牙, 印度, 土耳其, 意大利, 荷兰, 德国], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 故障转移, type: fallback, proxies: ['剩余流量：1536 GB', 套餐到期：2024-04-10, '跳转域名{请勿连接}:nflink.xyz', '俄罗斯 A', '俄罗斯 B', '[直连] 香港', '香港动态 A', '香港动态 B', '香港动态 C', '日本 A', '日本 B', '新加坡 A', '新加坡 B', '新加坡 C', '新加坡 D', '新加坡 E', 韩国, 台湾, 'HKG A', 'HKG B', 'HKG C', 'HKG D', 'HKG E', 'HKG F', 'HKG G', 'HKG H', 'HKG I', 'HKG J', 'HKG K', 'HKG L', 'HKG M', 'HKG N', 'HKG O', '美国 A', '美国 B', '美国 C', '美国 D', '美国 E', '美国 F', '美国 G', '美国 H', '美国 I', '台湾 B', '台湾 C', '台湾 D', '台湾 E', '台湾 F', '台湾 H', 加拿大, '英国 A', '英国 B', 西班牙, 印度, 土耳其, 意大利, 荷兰, 德国], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    - { name: NCloud, type: select, proxies: [自动选择, 故障转移, '剩余流量：1481.72 GB', '距离下次重置剩余：14 天', 套餐到期：2024-04-10, '跳转域名{请勿连接}:nflink.xyz', '俄罗斯 A', '俄罗斯 B', '[直连] 香港', '香港动态 A', '香港动态 B', '香港动态 C', '日本 A', '日本 B', '新加坡 A', '新加坡 B', '新加坡 C', '新加坡 D', '新加坡 E', 韩国, 台湾, 'HKG A', 'HKG B', 'HKG C', 'HKG D', 'HKG E', 'HKG F', 'HKG G', 'HKG H', 'HKG I', 'HKG J', 'HKG K', 'HKG L', 'HKG M', 'HKG N', 'HKG O', '美国 A', '美国 B', '美国 C', '美国 D', '美国 E', '美国 F', '美国 G', '美国 H', '美国 I', '台湾 B', '台湾 C', '台湾 D', '台湾 E', '台湾 F', '台湾 H', 加拿大, '英国 A', '英国 B', 西班牙, 印度, 土耳其, 意大利, 荷兰, 德国] }
+    - { name: 自动选择, type: url-test, proxies: ['剩余流量：1481.72 GB', '距离下次重置剩余：14 天', 套餐到期：2024-04-10, '跳转域名{请勿连接}:nflink.xyz', '俄罗斯 A', '俄罗斯 B', '[直连] 香港', '香港动态 A', '香港动态 B', '香港动态 C', '日本 A', '日本 B', '新加坡 A', '新加坡 B', '新加坡 C', '新加坡 D', '新加坡 E', 韩国, 台湾, 'HKG A', 'HKG B', 'HKG C', 'HKG D', 'HKG E', 'HKG F', 'HKG G', 'HKG H', 'HKG I', 'HKG J', 'HKG K', 'HKG L', 'HKG M', 'HKG N', 'HKG O', '美国 A', '美国 B', '美国 C', '美国 D', '美国 E', '美国 F', '美国 G', '美国 H', '美国 I', '台湾 B', '台湾 C', '台湾 D', '台湾 E', '台湾 F', '台湾 H', 加拿大, '英国 A', '英国 B', 西班牙, 印度, 土耳其, 意大利, 荷兰, 德国], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 故障转移, type: fallback, proxies: ['剩余流量：1481.72 GB', '距离下次重置剩余：14 天', 套餐到期：2024-04-10, '跳转域名{请勿连接}:nflink.xyz', '俄罗斯 A', '俄罗斯 B', '[直连] 香港', '香港动态 A', '香港动态 B', '香港动态 C', '日本 A', '日本 B', '新加坡 A', '新加坡 B', '新加坡 C', '新加坡 D', '新加坡 E', 韩国, 台湾, 'HKG A', 'HKG B', 'HKG C', 'HKG D', 'HKG E', 'HKG F', 'HKG G', 'HKG H', 'HKG I', 'HKG J', 'HKG K', 'HKG L', 'HKG M', 'HKG N', 'HKG O', '美国 A', '美国 B', '美国 C', '美国 D', '美国 E', '美国 F', '美国 G', '美国 H', '美国 I', '台湾 B', '台湾 C', '台湾 D', '台湾 E', '台湾 F', '台湾 H', 加拿大, '英国 A', '英国 B', 西班牙, 印度, 土耳其, 意大利, 荷兰, 德国], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 rules:
-    - 'DOMAIN,m.nasub.link,DIRECT'
+    - 'DOMAIN,uk.microsub.org,DIRECT'
     - 'DOMAIN-SUFFIX,services.googleapis.cn,NCloud'
     - 'DOMAIN-SUFFIX,xn--ngstr-lra8j.com,NCloud'
     - 'DOMAIN,safebrowsing.urlsec.qq.com,DIRECT'
